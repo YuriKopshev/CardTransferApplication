@@ -11,14 +11,7 @@ public class ConfirmCodeRepository {
     private final Map<String, String> confirmCodeMap = new HashMap<>();
 
     public void addConfirmation(String idOperation) {
-        confirmCodeMap.put(idOperation, getNewCode());
-    }
-
-    private String getNewCode() {
-        Random random = new Random();
-        int rage = 9999;
-        int generator = 1000 + random.nextInt(rage - 1000);
-        return String.valueOf(generator);
+        confirmCodeMap.put(idOperation, "0000");
     }
 
     public String getConfirmationCodeByOperationId(String operationId) {

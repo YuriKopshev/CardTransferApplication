@@ -9,6 +9,9 @@ public class Amount {
         this.currency = currency;
     }
 
+    public Amount() {
+    }
+
     public long getValue() {
         return value;
     }

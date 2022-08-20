@@ -51,11 +51,11 @@ public class CardTransferService {
     }
 
     public String confirmOperation(PostConfirm confirm) {
-        String operationId = confirm.getOperationId();
+        String operationId = confirmRepository.getConfirmationCodeByOperationId(confirm.getOperationId());
         String code = confirm.getCode();
-        String checkCode = confirmRepository.getConfirmationCodeByOperationId(operationId);
+        String checkCode = "0000";
 
-        if (checkCode != null && checkCode.equals(code)) {
+        if (checkCode.equals(code)) {
             TransferPost transaction = transactionRepository.getTransactionById(operationId);
             makeTransferFromCardToCard(repository.getCardByNumber(transaction.getCardFromNumber()
             ), repository.getCardByNumber(transaction.getCardToNumber()), transaction.getAmountValue());

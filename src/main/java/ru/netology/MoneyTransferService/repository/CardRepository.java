@@ -29,12 +29,12 @@ public class CardRepository {
                     "RUB",
                     1000L);
             Card card2 = new Card("9876543212346789",
-                    "09/22",
+                    "07/23",
                     "444",
                     "RUB",
                     2000L);
             Card card3 = new Card("1234000099998888",
-                    "01/22",
+                    "10/23",
                     "666",
                     "RUB",
                     5000L);

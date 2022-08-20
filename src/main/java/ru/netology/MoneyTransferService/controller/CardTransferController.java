@@ -19,14 +19,12 @@ public class CardTransferController {
     }
 
     @PostMapping("/transfer")
-    public ResponseEntity<?> transfer(@RequestBody TransferPost transferPost) {
-        String id =  service.transfer(transferPost);
-        return new ResponseEntity<>(id, HttpStatus.OK);
+    public String transfer(@RequestBody TransferPost transferPost) {
+        return service.transfer(transferPost);
     }
 
     @PostMapping("/confirmOperation")
-    public ResponseEntity<?> confirmOperation(@RequestBody PostConfirm confirm) {
-        String id =  service.confirmOperation(confirm);
-        return new ResponseEntity<>(id, HttpStatus.OK);
+    public String  confirmOperation(@RequestBody PostConfirm confirm) {
+        return service.confirmOperation(confirm);
     }
 }

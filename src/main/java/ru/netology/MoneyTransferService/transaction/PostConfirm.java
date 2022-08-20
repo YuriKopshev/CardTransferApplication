@@ -1,12 +1,18 @@
 package ru.netology.MoneyTransferService.transaction;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class PostConfirm {
     private String operationId;
     private String code;
 
+
     public PostConfirm(String operationId, String code) {
         this.operationId = operationId;
         this.code = code;
+    }
+
+    public PostConfirm() {
     }
 
     public String getOperationId() {
