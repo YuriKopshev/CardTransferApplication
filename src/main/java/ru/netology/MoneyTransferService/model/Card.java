@@ -15,7 +15,7 @@ public class Card {
 
     private final static SimpleDateFormat simpleDateFormatter = new SimpleDateFormat("MM/yy");
 
-    private static Date getDate(String validTill) throws ParseException {
+    public static Date getDate(String validTill) throws ParseException {
         return simpleDateFormatter.parse(validTill);
     }
 
@@ -43,12 +43,13 @@ public class Card {
         this.balance = balance;
     }
 
-    public Date getValidTill() {
-        return validTill;
-    }
 
     public String getCVV() {
         return CVV;
+    }
+
+    public Date getValidTill() {
+        return validTill;
     }
 
     @Override

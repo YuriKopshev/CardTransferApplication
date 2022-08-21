@@ -27,17 +27,17 @@ public class CardRepository {
                     "05/23",
                     "555",
                     "RUB",
-                    1000L);
+                    10000L);
             Card card2 = new Card("9876543212346789",
                     "07/23",
                     "444",
                     "RUB",
-                    2000L);
+                    20000L);
             Card card3 = new Card("1234000099998888",
                     "10/23",
                     "666",
                     "RUB",
-                    5000L);
+                    50000L);
             addCards(card1);
             addCards(card2);
             addCards(card3);

@@ -17,16 +17,16 @@ public class TransferPost {
     }
 
     public TransferPost(
-        @JsonProperty("cardFromNumber")
-        String cardFromNumber,
-        @JsonProperty("cardFromValidTill")
-        String cardFromValidTill,
-        @JsonProperty("cardFromCVV")
-        String cardFromCVV,
-        @JsonProperty("cardToNumber")
-        String cardToNumber,
-        @JsonProperty("amount")
-        Amount amount){
+            @JsonProperty("cardFromNumber")
+            String cardFromNumber,
+            @JsonProperty("cardFromValidTill")
+            String cardFromValidTill,
+            @JsonProperty("cardFromCVV")
+            String cardFromCVV,
+            @JsonProperty("cardToNumber")
+            String cardToNumber,
+            @JsonProperty("amount")
+            Amount amount) {
         this.cardFromNumber = cardFromNumber;
         this.cardFromValidTill = cardFromValidTill;
         this.cardFromCVV = cardFromCVV;
@@ -38,36 +38,31 @@ public class TransferPost {
         return cardFromNumber;
     }
 
-    public void setCardFromNumber(String cardFromNumber) {
-        this.cardFromNumber = cardFromNumber;
+    public String getCardToNumber() {
+        return cardToNumber;
+    }
+
+    public long getAmountValue() {
+        return amount.getValue();
     }
 
     public String getCardFromValidTill() {
         return cardFromValidTill;
     }
 
-    public void setCardFromValidTill(String cardFromValidTill) {
-        this.cardFromValidTill = cardFromValidTill;
-    }
-
     public String getCardFromCVV() {
         return cardFromCVV;
     }
 
-    public void setCardFromCVV(String cardFromCVV) {
-        this.cardFromCVV = cardFromCVV;
-    }
-
-    public String getCardToNumber() {
-        return cardToNumber;
-    }
-
-    public void setCardToNumber(String cardToNumber) {
-        this.cardToNumber = cardToNumber;
-    }
-
-    public long getAmountValue() {
-        return amount.getValue();
+    @Override
+    public String toString() {
+        return "TransferPost{" +
+                "cardFromNumber='" + cardFromNumber + '\'' +
+                ", cardFromValidTill='" + cardFromValidTill + '\'' +
+                ", cardFromCVV='" + cardFromCVV + '\'' +
+                ", cardToNumber='" + cardToNumber + '\'' +
+                ", amount=" + amount +
+                '}';
     }
 }
 
