@@ -5,12 +5,13 @@ import ru.netology.MoneyTransferService.transaction.TransferPost;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
 @Repository
 public class TransactionRepository {
     private final AtomicInteger counter = new AtomicInteger(1);
-    private final Map<String, TransferPost> transferPostMap = new HashMap<>();
+    private final ConcurrentHashMap<String, TransferPost> transferPostMap = new ConcurrentHashMap<>();
 
     public String getIdOperation() {
         return String.valueOf(counter.getAndIncrement());

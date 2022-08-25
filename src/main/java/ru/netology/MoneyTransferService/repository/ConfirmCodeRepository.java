@@ -7,17 +7,14 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
 
 @Repository
 public class ConfirmCodeRepository {
-    private final Map<String, String> confirmCodeMap = new HashMap<>();
+    private final ConcurrentHashMap<String, String> confirmCodeMap = new ConcurrentHashMap<>();
 
     public void addConfirmation(String idOperation) {
         confirmCodeMap.put(idOperation, "0000");
-    }
-
-    public String getConfirmationCodeByOperationId(String operationId) {
-        return confirmCodeMap.get(operationId);
     }
 
     public String getIdByCodeValue(String code) {
@@ -28,6 +25,10 @@ public class ConfirmCodeRepository {
             }
         }
         throw new ErrorConfirmation("Confirmation code is not valid");
+    }
+
+    public ConcurrentHashMap<String, String> getConfirmCodeMap() {
+        return confirmCodeMap;
     }
 }
 

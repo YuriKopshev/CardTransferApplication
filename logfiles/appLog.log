@@ -1,0 +1,140 @@
+2022-08-25 08:34:09.451  INFO 55836 --- [main] r.n.M.MoneyTransferServiceApplication    : Starting MoneyTransferServiceApplication using Java 11.0.15 on Yuri_Kopshev with PID 55836 (C:\LearnProjects\CardTransferService-Course_Work-master\build\classes\java\main started by yurak in C:\LearnProjects\CardTransferService-Course_Work-master)
+2022-08-25 08:34:09.464  INFO 55836 --- [main] r.n.M.MoneyTransferServiceApplication    : No active profile set, falling back to default profiles: default
+2022-08-25 08:34:10.931  INFO 55836 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5500 (http)
+2022-08-25 08:34:10.949  INFO 55836 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-25 08:34:10.950  INFO 55836 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2022-08-25 08:34:11.193  INFO 55836 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-25 08:34:11.193  INFO 55836 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1654 ms
+2022-08-25 08:34:11.690  INFO 55836 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5500 (http) with context path ''
+2022-08-25 08:34:11.713  INFO 55836 --- [main] r.n.M.MoneyTransferServiceApplication    : Started MoneyTransferServiceApplication in 3.148 seconds (JVM running for 4.599)
+2022-08-25 08:36:00.500  INFO 55836 --- [http-nio-5500-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-25 08:36:00.687  INFO 55836 --- [http-nio-5500-exec-2] r.n.M.service.CardTransferService        : Data transaction: TransferPost{cardFromNumber='2345678912345678', cardFromValidTill='05/23', cardFromCVV='555', cardToNumber='9876543212346789', amount=ru.netology.MoneyTransferService.transaction.Amount@5ee0e4ce}created and waiting for SMS confirmation!
+2022-08-25 08:36:00.724  INFO 55836 --- [http-nio-5500-exec-4] r.n.M.service.CardTransferService        : Transaction number: 1 confirmed
+2022-08-25 08:36:54.339  INFO 55836 --- [http-nio-5500-exec-5] r.n.M.exception.ExceptionAdvice          : 
+Not enough money on the card
+2022-08-25 08:37:34.258  INFO 55836 --- [http-nio-5500-exec-6] r.n.M.service.CardTransferService        : Data transaction: TransferPost{cardFromNumber='9876543212346789', cardFromValidTill='07/23', cardFromCVV='444', cardToNumber='2345678912345678', amount=ru.netology.MoneyTransferService.transaction.Amount@3d1e5c79}created and waiting for SMS confirmation!
+2022-08-25 08:37:34.269  INFO 55836 --- [http-nio-5500-exec-7] r.n.M.service.CardTransferService        : Transaction number: 1 confirmed
+2022-08-25 10:34:39.067  INFO 54236 --- [Test worker] n.M.MoneyTransferServiceApplicationTests : Starting MoneyTransferServiceApplicationTests using Java 11.0.15 on Yuri_Kopshev with PID 54236 (started by yurak in C:\LearnProjects\CardTransferService-Course_Work-master)
+2022-08-25 10:34:39.072  INFO 54236 --- [Test worker] n.M.MoneyTransferServiceApplicationTests : No active profile set, falling back to default profiles: default
+2022-08-25 10:34:42.939  INFO 54236 --- [Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-08-25 10:34:43.093  INFO 54236 --- [Test worker] n.M.MoneyTransferServiceApplicationTests : Started MoneyTransferServiceApplicationTests in 4.595 seconds (JVM running for 7.468)
+2022-08-25 10:34:44.533  INFO 54236 --- [Test worker] r.n.M.service.CardTransferService        : Data transaction: Mock for TransferPost, hashCode: 61277557created and waiting for SMS confirmation!
+2022-08-25 10:34:44.538  INFO 54236 --- [Test worker] r.n.M.service.CardTransferService        : Data transaction: Mock for TransferPost, hashCode: 1570165812created and waiting for SMS confirmation!
+2022-08-25 10:34:44.545  INFO 54236 --- [Test worker] r.n.M.service.CardTransferService        : Data transaction: Mock for TransferPost, hashCode: 1043090763created and waiting for SMS confirmation!
+2022-08-25 10:34:44.546  INFO 54236 --- [Test worker] r.n.M.service.CardTransferService        : Transaction number: 1 confirmed
+2022-08-25 10:39:30.261  INFO 63112 --- [Test worker] n.M.MoneyTransferServiceApplicationTests : Starting MoneyTransferServiceApplicationTests using Java 11.0.15 on Yuri_Kopshev with PID 63112 (started by yurak in C:\LearnProjects\CardTransferService-Course_Work-master)
+2022-08-25 10:39:30.266  INFO 63112 --- [Test worker] n.M.MoneyTransferServiceApplicationTests : No active profile set, falling back to default profiles: default
+2022-08-25 10:39:33.618  INFO 63112 --- [Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-08-25 10:39:33.751  INFO 63112 --- [Test worker] n.M.MoneyTransferServiceApplicationTests : Started MoneyTransferServiceApplicationTests in 3.953 seconds (JVM running for 6.374)
+2022-08-25 10:39:34.849  INFO 63112 --- [Test worker] r.n.M.service.CardTransferService        : Data transaction: Mock for TransferPost, hashCode: 851074149created and waiting for SMS confirmation!
+2022-08-25 10:39:34.853  INFO 63112 --- [Test worker] r.n.M.service.CardTransferService        : Data transaction: Mock for TransferPost, hashCode: 449953373created and waiting for SMS confirmation!
+2022-08-25 10:39:34.858  INFO 63112 --- [Test worker] r.n.M.service.CardTransferService        : Data transaction: Mock for TransferPost, hashCode: 192393376created and waiting for SMS confirmation!
+2022-08-25 10:39:34.859  INFO 63112 --- [Test worker] r.n.M.service.CardTransferService        : Transaction number: 1 confirmed
+2022-08-25 10:44:33.434  INFO 53736 --- [Test worker] n.M.MoneyTransferServiceApplicationTests : Starting MoneyTransferServiceApplicationTests using Java 11.0.15 on Yuri_Kopshev with PID 53736 (started by yurak in C:\LearnProjects\CardTransferService-Course_Work-master)
+2022-08-25 10:44:33.440  INFO 53736 --- [Test worker] n.M.MoneyTransferServiceApplicationTests : No active profile set, falling back to default profiles: default
+2022-08-25 10:44:37.079  INFO 53736 --- [Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-08-25 10:44:37.232  INFO 53736 --- [Test worker] n.M.MoneyTransferServiceApplicationTests : Started MoneyTransferServiceApplicationTests in 4.334 seconds (JVM running for 7.073)
+2022-08-25 10:44:38.325  INFO 53736 --- [Test worker] r.n.M.service.CardTransferService        : Data transaction: Mock for TransferPost, hashCode: 1300389310created and waiting for SMS confirmation!
+2022-08-25 10:44:38.331  INFO 53736 --- [Test worker] r.n.M.service.CardTransferService        : Data transaction: Mock for TransferPost, hashCode: 286787408created and waiting for SMS confirmation!
+2022-08-25 10:44:38.341  INFO 53736 --- [Test worker] r.n.M.service.CardTransferService        : Data transaction: Mock for TransferPost, hashCode: 2105232900created and waiting for SMS confirmation!
+2022-08-25 10:44:38.344  INFO 53736 --- [Test worker] r.n.M.service.CardTransferService        : Transaction number: 1 confirmed
+2022-08-25 12:23:03.331  INFO 75248 --- [Test worker] n.M.MoneyTransferServiceIntegrationTests : Starting MoneyTransferServiceIntegrationTests using Java 11.0.15 on Yuri_Kopshev with PID 75248 (started by yurak in C:\LearnProjects\CardTransferService-Course_Work-master)
+2022-08-25 12:23:03.334  INFO 75248 --- [Test worker] n.M.MoneyTransferServiceIntegrationTests : No active profile set, falling back to default profiles: default
+2022-08-25 12:23:05.421  INFO 75248 --- [Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-08-25 12:23:05.447  INFO 75248 --- [Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-25 12:23:05.448  INFO 75248 --- [Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2022-08-25 12:23:05.804  INFO 75248 --- [Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-25 12:23:05.804  INFO 75248 --- [Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2429 ms
+2022-08-25 12:23:06.977  INFO 75248 --- [Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-08-25 12:23:07.108  INFO 75248 --- [Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 57755 (http) with context path ''
+2022-08-25 12:23:07.123  INFO 75248 --- [Test worker] n.M.MoneyTransferServiceIntegrationTests : Started MoneyTransferServiceIntegrationTests in 4.401 seconds (JVM running for 14.135)
+2022-08-25 12:25:14.217  INFO 52616 --- [Test worker] n.M.MoneyTransferServiceIntegrationTests : Starting MoneyTransferServiceIntegrationTests using Java 11.0.15 on Yuri_Kopshev with PID 52616 (started by yurak in C:\LearnProjects\CardTransferService-Course_Work-master)
+2022-08-25 12:25:14.220  INFO 52616 --- [Test worker] n.M.MoneyTransferServiceIntegrationTests : No active profile set, falling back to default profiles: default
+2022-08-25 12:25:16.016  INFO 52616 --- [Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-08-25 12:25:16.036  INFO 52616 --- [Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-25 12:25:16.037  INFO 52616 --- [Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2022-08-25 12:25:16.368  INFO 52616 --- [Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-25 12:25:16.369  INFO 52616 --- [Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2111 ms
+2022-08-25 12:25:17.521  INFO 52616 --- [Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-08-25 12:25:17.632  INFO 52616 --- [Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 58011 (http) with context path ''
+2022-08-25 12:25:17.650  INFO 52616 --- [Test worker] n.M.MoneyTransferServiceIntegrationTests : Started MoneyTransferServiceIntegrationTests in 3.902 seconds (JVM running for 12.448)
+2022-08-25 12:25:58.216  INFO 16676 --- [Test worker] n.M.MoneyTransferServiceIntegrationTests : Starting MoneyTransferServiceIntegrationTests using Java 11.0.15 on Yuri_Kopshev with PID 16676 (started by yurak in C:\LearnProjects\CardTransferService-Course_Work-master)
+2022-08-25 12:25:58.219  INFO 16676 --- [Test worker] n.M.MoneyTransferServiceIntegrationTests : No active profile set, falling back to default profiles: default
+2022-08-25 12:25:59.931  INFO 16676 --- [Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-08-25 12:25:59.950  INFO 16676 --- [Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-25 12:25:59.951  INFO 16676 --- [Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2022-08-25 12:26:00.261  INFO 16676 --- [Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-25 12:26:00.261  INFO 16676 --- [Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2000 ms
+2022-08-25 12:26:01.460  INFO 16676 --- [Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-08-25 12:26:01.573  INFO 16676 --- [Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 58101 (http) with context path ''
+2022-08-25 12:26:01.593  INFO 16676 --- [Test worker] n.M.MoneyTransferServiceIntegrationTests : Started MoneyTransferServiceIntegrationTests in 3.855 seconds (JVM running for 5.796)
+2022-08-25 12:26:44.785  INFO 81416 --- [Test worker] n.M.MoneyTransferServiceIntegrationTests : Starting MoneyTransferServiceIntegrationTests using Java 11.0.15 on Yuri_Kopshev with PID 81416 (started by yurak in C:\LearnProjects\CardTransferService-Course_Work-master)
+2022-08-25 12:26:44.788  INFO 81416 --- [Test worker] n.M.MoneyTransferServiceIntegrationTests : No active profile set, falling back to default profiles: default
+2022-08-25 12:26:46.682  INFO 81416 --- [Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-08-25 12:26:46.706  INFO 81416 --- [Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-25 12:26:46.707  INFO 81416 --- [Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2022-08-25 12:26:47.036  INFO 81416 --- [Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-25 12:26:47.036  INFO 81416 --- [Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2215 ms
+2022-08-25 12:26:48.212  INFO 81416 --- [Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-08-25 12:26:48.326  INFO 81416 --- [Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 58193 (http) with context path ''
+2022-08-25 12:26:48.344  INFO 81416 --- [Test worker] n.M.MoneyTransferServiceIntegrationTests : Started MoneyTransferServiceIntegrationTests in 4.086 seconds (JVM running for 12.515)
+2022-08-25 12:29:16.972  INFO 76352 --- [Test worker] n.M.MoneyTransferServiceIntegrationTests : Starting MoneyTransferServiceIntegrationTests using Java 11.0.15 on Yuri_Kopshev with PID 76352 (started by yurak in C:\LearnProjects\CardTransferService-Course_Work-master)
+2022-08-25 12:29:16.975  INFO 76352 --- [Test worker] n.M.MoneyTransferServiceIntegrationTests : No active profile set, falling back to default profiles: default
+2022-08-25 12:29:18.685  INFO 76352 --- [Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-08-25 12:29:18.697  INFO 76352 --- [Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-25 12:29:18.697  INFO 76352 --- [Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2022-08-25 12:29:18.993  INFO 76352 --- [Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-25 12:29:18.993  INFO 76352 --- [Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1983 ms
+2022-08-25 12:29:20.123  INFO 76352 --- [Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-08-25 12:29:20.254  INFO 76352 --- [Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 58417 (http) with context path ''
+2022-08-25 12:29:20.269  INFO 76352 --- [Test worker] n.M.MoneyTransferServiceIntegrationTests : Started MoneyTransferServiceIntegrationTests in 3.761 seconds (JVM running for 12.065)
+2022-08-25 12:41:33.660  INFO 4492 --- [Test worker] n.M.MoneyTransferServiceIntegrationTests : Starting MoneyTransferServiceIntegrationTests using Java 11.0.15 on Yuri_Kopshev with PID 4492 (started by yurak in C:\LearnProjects\CardTransferService-Course_Work-master)
+2022-08-25 12:41:33.663  INFO 4492 --- [Test worker] n.M.MoneyTransferServiceIntegrationTests : No active profile set, falling back to default profiles: default
+2022-08-25 12:41:35.670  INFO 4492 --- [Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-08-25 12:41:35.692  INFO 4492 --- [Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-25 12:41:35.693  INFO 4492 --- [Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2022-08-25 12:41:36.024  INFO 4492 --- [Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-25 12:41:36.024  INFO 4492 --- [Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2318 ms
+2022-08-25 12:41:37.247  INFO 4492 --- [Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-08-25 12:41:37.370  INFO 4492 --- [Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 60382 (http) with context path ''
+2022-08-25 12:41:37.389  INFO 4492 --- [Test worker] n.M.MoneyTransferServiceIntegrationTests : Started MoneyTransferServiceIntegrationTests in 4.288 seconds (JVM running for 12.849)
+2022-08-25 12:45:05.013  INFO 60340 --- [Test worker] n.M.MoneyTransferServiceIntegrationTests : Starting MoneyTransferServiceIntegrationTests using Java 11.0.15 on Yuri_Kopshev with PID 60340 (started by yurak in C:\LearnProjects\CardTransferService-Course_Work-master)
+2022-08-25 12:45:05.017  INFO 60340 --- [Test worker] n.M.MoneyTransferServiceIntegrationTests : No active profile set, falling back to default profiles: default
+2022-08-25 12:45:06.828  INFO 60340 --- [Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-08-25 12:45:06.840  INFO 60340 --- [Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-25 12:45:06.841  INFO 60340 --- [Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2022-08-25 12:45:07.153  INFO 60340 --- [Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-25 12:45:07.153  INFO 60340 --- [Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2106 ms
+2022-08-25 12:45:08.225  INFO 60340 --- [Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-08-25 12:45:08.362  INFO 60340 --- [Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 60656 (http) with context path ''
+2022-08-25 12:45:08.381  INFO 60340 --- [Test worker] n.M.MoneyTransferServiceIntegrationTests : Started MoneyTransferServiceIntegrationTests in 3.905 seconds (JVM running for 13.564)
+2022-08-25 12:47:37.251  INFO 66744 --- [Test worker] n.M.MoneyTransferServiceIntegrationTests : Starting MoneyTransferServiceIntegrationTests using Java 11.0.15 on Yuri_Kopshev with PID 66744 (started by yurak in C:\LearnProjects\CardTransferService-Course_Work-master)
+2022-08-25 12:47:37.255  INFO 66744 --- [Test worker] n.M.MoneyTransferServiceIntegrationTests : No active profile set, falling back to default profiles: default
+2022-08-25 12:47:40.023  INFO 66744 --- [Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-08-25 12:47:40.060  INFO 66744 --- [Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-25 12:47:40.061  INFO 66744 --- [Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2022-08-25 12:47:40.447  INFO 66744 --- [Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-25 12:47:40.447  INFO 66744 --- [Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3132 ms
+2022-08-25 12:47:42.605  INFO 66744 --- [Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-08-25 12:47:42.863  INFO 66744 --- [Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 60901 (http) with context path ''
+2022-08-25 12:47:42.892  INFO 66744 --- [Test worker] n.M.MoneyTransferServiceIntegrationTests : Started MoneyTransferServiceIntegrationTests in 6.673 seconds (JVM running for 17.423)
+2022-08-25 12:51:57.734  INFO 31252 --- [Test worker] n.M.MoneyTransferServiceIntegrationTests : Starting MoneyTransferServiceIntegrationTests using Java 11.0.15 on Yuri_Kopshev with PID 31252 (started by yurak in C:\LearnProjects\CardTransferService-Course_Work-master)
+2022-08-25 12:51:57.738  INFO 31252 --- [Test worker] n.M.MoneyTransferServiceIntegrationTests : No active profile set, falling back to default profiles: default
+2022-08-25 12:52:00.810  INFO 31252 --- [Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-08-25 12:52:00.840  INFO 31252 --- [Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-25 12:52:00.841  INFO 31252 --- [Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2022-08-25 12:52:01.267  INFO 31252 --- [Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-25 12:52:01.268  INFO 31252 --- [Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3467 ms
+2022-08-25 12:52:03.341  INFO 31252 --- [Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-08-25 12:52:03.599  INFO 31252 --- [Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 61350 (http) with context path ''
+2022-08-25 12:52:03.627  INFO 31252 --- [Test worker] n.M.MoneyTransferServiceIntegrationTests : Started MoneyTransferServiceIntegrationTests in 6.934 seconds (JVM running for 18.693)
+2022-08-25 12:53:51.521  INFO 84612 --- [Test worker] n.M.MoneyTransferServiceIntegrationTests : Starting MoneyTransferServiceIntegrationTests using Java 11.0.15 on Yuri_Kopshev with PID 84612 (started by yurak in C:\LearnProjects\CardTransferService-Course_Work-master)
+2022-08-25 12:53:51.523  INFO 84612 --- [Test worker] n.M.MoneyTransferServiceIntegrationTests : No active profile set, falling back to default profiles: default
+2022-08-25 12:53:53.335  INFO 84612 --- [Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-08-25 12:53:53.349  INFO 84612 --- [Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-25 12:53:53.350  INFO 84612 --- [Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2022-08-25 12:53:53.642  INFO 84612 --- [Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-25 12:53:53.642  INFO 84612 --- [Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2087 ms
+2022-08-25 12:53:54.780  INFO 84612 --- [Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-08-25 12:53:54.926  INFO 84612 --- [Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 61561 (http) with context path ''
+2022-08-25 12:53:54.953  INFO 84612 --- [Test worker] n.M.MoneyTransferServiceIntegrationTests : Started MoneyTransferServiceIntegrationTests in 3.901 seconds (JVM running for 12.106)

@@ -77,7 +77,7 @@ public class CardTransferService {
             makeTransferFromCardToCard(repository.getCardByNumber(transaction.getCardFromNumber()
             ), repository.getCardByNumber(transaction.getCardToNumber()), transaction.getAmountValue());
             log.info("Transaction number: " + operationId + " confirmed");
-            return confirm.getOperationId();
+            return operationId;
         } else {
             throw new ErrorConfirmation("Confirmation code is not valid");
         }
