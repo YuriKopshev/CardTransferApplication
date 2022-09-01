@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class TransactionRepositoryTest {
 
     private final TransactionRepository repository = new TransactionRepository();
-    private final TransferPost transferPost = Mockito.mock(TransferPost.class);
+    private final TransferPost transferPost = new TransferPost();
 
     @Test
     void getIdOperation() {

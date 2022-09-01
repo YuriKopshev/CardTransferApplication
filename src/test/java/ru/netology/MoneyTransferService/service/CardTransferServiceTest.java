@@ -22,7 +22,6 @@ class CardTransferServiceTest {
     private final ConfirmCodeRepository confirmRepository = new ConfirmCodeRepository();
     private final CardTransferService service = new CardTransferService(repository, transactionRepository, confirmRepository);
     private final TransferPost transferPost = Mockito.mock(TransferPost.class);
-
     private final PostConfirm confirm = Mockito.mock(PostConfirm.class);
 
     @Test

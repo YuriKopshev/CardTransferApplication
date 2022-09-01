@@ -2,6 +2,7 @@ package ru.netology.MoneyTransferService;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -19,6 +20,7 @@ import java.net.URISyntaxException;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@Testcontainers
 class MoneyTransferServiceIntegrationTests {
 
 	@Autowired
@@ -28,10 +30,6 @@ class MoneyTransferServiceIntegrationTests {
 	private static final GenericContainer<?> app = new GenericContainer<>("backend:1.0")
 			.withExposedPorts(5500);
 
-	@BeforeAll
-	public static void setUp() {
-		app.start();
-	}
 
 	@Test
 	public void successTransferPostTest() {
